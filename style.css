@@ -1,0 +1,183 @@
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,h2,p{
+    margin: 0px;
+}
+
+.container{
+    width: 500px;
+    display: flex;
+}
+
+.result-info{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+h2{
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+p{
+    font-size: 14px;
+}
+
+.total-score{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.result-info p{
+    color: hsl(241, 100%, 89%);
+}
+
+
+.total-score span{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.result-info > p{
+    width: 200px;
+}
+
+.summary-info{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.summary-info > h2{
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-info > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image-holder{
+    display: flex;
+    gap: 5px;
+}
+
+.dark{
+    color: hsl(224, 30%, 27%);
+    
+}
+
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.363);
+}
+
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%,0.363);
+}
+
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background-color:  hsl(166, 100%, 37%,0.363);
+}
+
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%,0.363);
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:before{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "Continue";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+button:hover::before{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 450px){
+    body{
+        height: auto;
+    }
+
+    .container{
+        width: auto;
+        display: block;
+        margin: 50px 0px;
+    }
+
+    .summary-info > h2{
+        margin-bottom: 16px;
+    }
+
+    .summary-info > div{
+        margin-bottom: 16px;
+    }
+
+    button{
+        margin-top: 16px;
+    }
+}
