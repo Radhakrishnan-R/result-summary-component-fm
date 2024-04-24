@@ -52,9 +52,10 @@ p{
     justify-content: center;
     align-items: center;
     width: 100px;
-    height: 120px;
+    height: 100px;
     border-radius: 50%;
-    margin: 16px;
+    margin: 30px;
+    padding: 15px;
 }
 
 .result-info p{
@@ -105,22 +106,22 @@ p{
 
 .reaction{
     color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.363);
+    background-color: hsla(0, 100%, 67%, 0.200);
 }
 
 .memory{
     color: hsl(39, 100%, 56%);
-    background-color: hsl(39, 100%, 56%,0.363);
+    background-color: hsl(39, 100%, 56%,0.200);
 }
 
 .verbal{
     color: hsl(166, 100%, 37%);
-    background-color:  hsl(166, 100%, 37%,0.363);
+    background-color:  hsl(166, 100%, 37%,0.200);
 }
 
 .visual{
     color: hsl(234, 85%, 45%);
-    background-color: hsl(234, 85%, 45%,0.363);
+    background-color: hsl(234, 85%, 45%,0.200);
 }
 
 button{
