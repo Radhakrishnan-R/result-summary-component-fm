@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-On this project I learnt how to use ::before psuedo class to add linear gradient to a button element.
+On this project I learnt how to use ::before psuedo class to add linear gradient to a button element and it was great!
 
 ```css
 button:before{
